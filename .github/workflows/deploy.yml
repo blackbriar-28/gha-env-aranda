@@ -8,7 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo-aranda
 jobs:
   test:
-      # environment: testing
+    environment: testing
     env:  
       MONGODB_CLUSTER_ADDRESS: gha-demo-aranda.xgfnice.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
