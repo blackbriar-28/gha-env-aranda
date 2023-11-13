@@ -12,7 +12,7 @@ jobs:
     env:  
       MONGODB_CLUSTER_ADDRESS: gha-demo-aranda.xgfnice.mongodb.net
       MONGODB_USERNAME: blackbriar
-      MONGODB_PASSWORD: ZuhgVcFeG2jTysTy
+      MONGODB_PASSWORD: ZuhgVcFpassdeG2jTysTy
       PORT: 8080   
     runs-on: ubuntu-latest
     steps:
