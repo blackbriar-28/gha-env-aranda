@@ -11,8 +11,8 @@ jobs:
       # environment: testing
     env:  
       MONGODB_CLUSTER_ADDRESS: gha-demo-aranda.xgfnice.mongodb.net
-      MONGODB_USERNAME: blackbriar
-      MONGODB_PASSWORD: ZuhgVcFpassdeG2jTysTy
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080   
     runs-on: ubuntu-latest
     steps:
@@ -38,6 +38,6 @@ jobs:
     steps:
       - name: Output information
         run: |        
-          echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
+          echo "MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}"
           echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}"
 
